@@ -69,7 +69,7 @@ def logo():
     os.system('clear')
     ip = requests.get('https://api.ipify.org').text.strip()
     loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].lower()
-    print '\x1b[1;91m         ▒ ▒ ▒ALI▒  ▒   ▒\n\x1b[1;91m       ▒ ▒▒RAZA▒\n\x1b[1;92m     ▒ ▒ WP▒ ▒\n\x1b[1;92m   ▒ ▒ 03047269778 ▒ ▒ ▒\n\x1b[1;91m    ▒▒▒▒ ▒ ▒\n\x1b[1;91m                                  / /\n\x1b[1;97m-------------------------------------------------'
+    print '\[1;91m▒ ▒ ▒ALI▒  ▒   ▒\n\x1b[1;91m       ▒ ▒▒RAZA▒\n\x1b[1;92m     ▒ ▒ WP▒ ▒\n\x1b[1;92m   ▒ ▒ 03047269778 ▒ ▒ ▒\n\x1b[1;91m    ▒▒▒▒ ▒ ▒\n\x1b[1;91m                                  / /\n\x1b[1;97m-------------------------------------------------'
     print ' [*] IP ADDRESS : \x1b[1;92m' + ip
     print '\x1b[0m [*] LOCATION   : \x1b[1;92m' + loc
     print '-' * 50
